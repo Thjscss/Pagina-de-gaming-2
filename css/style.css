@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/*@Import esta deprecated. El estandar recomendado para usar los @import es @use
+ya que la antigua regla @import ha sido oficialmente marcada como obsoleta (deprecated) y será eliminada en futuras versiones.*/
+header {
+  padding: 20px;
+}
+header ul {
+  list-style: circle;
+}
+header ul li {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  background-color: pink;
+  border: 2px solid white;
+}
+
+.btn {
+  background-color: rgb(76, 127, 204);
+}
+
+.btn:hover {
+  background-color: blue;
+}
+
+@media only screen and (min-width: 1280px) {
+  .typo-1 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+  .typo-1 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 599px) and (max-width: 959px) {
+  .typo-1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 598px) {
+  .typo-1 {
+    text-align: center;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+/*sass | scss */
+
+/*# sourceMappingURL=style.css.map */

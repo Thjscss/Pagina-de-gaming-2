@@ -1,0 +1,17 @@
+$primary-color: #3498db;
+$secondary-color: black;
+$tertiary-color: rgb(54, 133, 224);
+/*@Import esta deprecated. El estandar recomendado para usar los @import es @use
+ya que la antigua regla @import ha sido oficialmente marcada como obsoleta (deprecated) y será eliminada en futuras versiones.*/
+@use 'nav';
+@use 'footer';
+@use 'utility';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $secondary-color;
+}
+
+
+
+/*sass | scss */
