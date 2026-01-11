@@ -1,17 +1,26 @@
-$primary-color: #3498db;
-$secondary-color: black;
-$tertiary-color: rgb(54, 133, 224);
 /*@Import esta deprecated. El estandar recomendado para usar los @import es @use
 ya que la antigua regla @import ha sido oficialmente marcada como obsoleta (deprecated) y será eliminada en futuras versiones.*/
-@use 'nav';
-@use 'footer';
-@use 'utility';
+@use './utils/variables' as vars;
+/* @use 'navbar'; */
+/* @use 'footer'; */
+/* @use 'typography'; */
+/* @use 'buttons'; */
+@use './utils/utility' as utility;
+@use './components/navbar';
+@use './components/footer';
+@use '../scss/base/typography';
+/* @use 'reset'; */
+
 
 body {
   font-family: Arial, sans-serif;
-  background-color: $secondary-color;
+  margin: 0;
+  background-color: vars.$bg-color;
+  background: vars.$bg-color;
 }
-
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*sass | scss */

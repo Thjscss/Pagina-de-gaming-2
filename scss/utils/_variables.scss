@@ -1,0 +1,14 @@
+// Variables globales
+$bg-color: rgb(255, 255, 255); // fondo y bordes
+$bg-color-nav: black; // fondo de la barra de navegación
+$text-color: #FAFAFA; // texto principal
+$primary-accent: #08BC08; // botones o títulos importantes
+$secondary-bg: #2d2d30; // fondo secundario
+
+// NUEVO: Mapa para bucles (@each)
+$social-colors: (
+    "facebook": #3b5998,
+    "twitter": #1da1f2,
+    "instagram": #e1306c,
+    "discord": #7289da
+);

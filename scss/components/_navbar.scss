@@ -1,0 +1,94 @@
+@use '../utils/utility';
+@use '../utils/variables' as vars;
+
+header{
+  background-color: black;
+  padding: 0%;
+  height: 6em;
+    ul{
+        list-style: circle;
+        li{
+            text-decoration: underline;
+        }
+    }
+}
+nav{
+  background-color: vars.$bg-color-nav;
+  border-bottom: 2px solid vars.$primary-accent;
+  height: 6em;
+}
+
+/* Estilos del botón Hamburguesa Neón */
+.navbar-toggler {
+      background-size: 5em 5em;
+  /* Reseteamos estilos base de Bootstrap */
+  border: none;
+  padding: 0.5em;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  border: 0.2em solid vars.$bg-color;
+  background-color: vars.$primary-accent;
+  /* Flexbox para centrar las lineas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  transition: all 2s ease;
+
+  /* Quitamos el borde azul al hacer click en móviles */
+  &:focus {
+    box-shadow: none;
+  }
+  /* Aumenta tamaño del icono de bootstrap */
+  .navbar-toggler-icon{
+    background-size: 1.5em 5em;
+    
+  }
+  }
+  .offcanvas{
+    background-color: vars.$bg-color-nav;
+  }
+.nav-link , .offcanvas-title{
+  color: vars.$text-color;
+  font-size: 1.5em;
+}
+
+/* Aumentar tamaño del título en la barra de navegación */
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: vars.$text-color;
+}
+
+.navbar-nav{
+  border-color: vars.$primary-accent !important;
+  background-color: vars.$bg-color-nav;
+}
+.imgbar{
+  width: 100%;
+}
+
+
+
+@include utility.devices(desktop, laptop, tablet, mobile) {
+  .typo-1 {
+    text-align: center;
+  }
+}
+
+.navbar-collapse  {
+&.show {
+        background-color: transparent;         
+        .nav-link {
+            color: vars.$text-color;
+        }
+          &.collapse {
+      /* Cuando el menú hamburguesa está cerrado, aplicar fondo secundario */
+background-color: vars.$secondary-bg; // Color cuando está oculto/cerrado (si llegara a verse)
+    }
+}
+}
+

@@ -1,8 +1,14 @@
 @charset "UTF-8";
 /*@Import esta deprecated. El estandar recomendado para usar los @import es @use
 ya que la antigua regla @import ha sido oficialmente marcada como obsoleta (deprecated) y será eliminada en futuras versiones.*/
+/* @use 'navbar'; */
+/* @use 'footer'; */
+/* @use 'typography'; */
+/* @use 'buttons'; */
 header {
-  padding: 20px;
+  background-color: black;
+  padding: 0%;
+  height: 6em;
 }
 header ul {
   list-style: circle;
@@ -11,17 +17,66 @@ header ul li {
   text-decoration: underline;
 }
 
-.dropdown-menu {
-  background-color: pink;
-  border: 2px solid white;
+nav {
+  background-color: black;
+  border-bottom: 2px solid #08BC08;
+  height: 6em;
 }
 
-.btn {
-  background-color: rgb(76, 127, 204);
+/* Estilos del botón Hamburguesa Neón */
+.navbar-toggler {
+  background-size: 5em 5em;
+  /* Reseteamos estilos base de Bootstrap */
+  border: none;
+  padding: 0.5em;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  border: 0.2em solid rgb(255, 255, 255);
+  background-color: #08BC08;
+  /* Flexbox para centrar las lineas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  transition: all 2s ease;
+  /* Quitamos el borde azul al hacer click en móviles */
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler {
+  /* Aumenta tamaño del icono de bootstrap */
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-size: 1.5em 5em;
 }
 
-.btn:hover {
-  background-color: blue;
+.offcanvas {
+  background-color: black;
+}
+
+.nav-link, .offcanvas-title {
+  color: #FAFAFA;
+  font-size: 1.5em;
+}
+
+/* Aumentar tamaño del título en la barra de navegación */
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #FAFAFA;
+}
+
+.navbar-nav {
+  border-color: #08BC08 !important;
+  background-color: black;
+}
+
+.imgbar {
+  width: 100%;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -44,9 +99,65 @@ header ul li {
     text-align: center;
   }
 }
+.navbar-collapse.show {
+  background-color: transparent;
+}
+.navbar-collapse.show .nav-link {
+  color: #FAFAFA;
+}
+.navbar-collapse.show.collapse {
+  /* Cuando el menú hamburguesa está cerrado, aplicar fondo secundario */
+  background-color: #2d2d30;
+}
+
+/* Media query para pantallas de 700px o menos */
+@media (max-width: 700px) {
+  /* 1. Achicamos el espacio entre los botones del menú */
+  footer .navbar-nav {
+    gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+    flex-wrap: wrap; /* Permite que los links bajen si no entran en una línea */
+  }
+  /* 2. Achicamos el tamaño de la letra de los enlaces */
+  footer .nav-link {
+    font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+  }
+  /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
+  footer form input {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  footer .form button {
+    width: 80%;
+  }
+}
+.pie {
+  max-width: 100%;
+  background-color: black;
+}
+
+.text-footer {
+  color: #FAFAFA;
+  margin-bottom: 0%;
+}
+
+.formall input {
+  padding: 0.5em;
+  border-radius: 0.3em;
+  border: none;
+  width: 70%;
+}
+
+/* @use 'reset'; */
 body {
   font-family: Arial, sans-serif;
-  background-color: black;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*sass | scss */
