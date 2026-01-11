@@ -7,15 +7,8 @@ $button-bg: #FF8C00; // botones y titulos
 
 // NUEVO: Mapa para bucles (@each)
 $social-colors: (
-    /* Azul clásico pero vibrante de Facebook */
     "facebook":  #1877F2, 
-    
-    /* El celeste característico de Twitter/X */
-    "twitter":   #1DA1F2, 
-    
-    /* El rosa/lila fuerte de Instagram */
+    "twitter":   #1DA1F2,  /* Ojo: Twitter ahora es X, pero el celeste queda mejor en webs */
     "instagram": #E1306C, 
-    
-    /* El violeta "Blurple" oficial de Discord */
     "discord":   #5865F2  
 );

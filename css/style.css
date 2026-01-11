@@ -123,14 +123,12 @@ nav {
   }
   /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
   footer form input {
-    width: 60%;
+    width: 40%;
     margin-bottom: 10px;
   }
   footer .form button {
     width: 80%;
   }
-}
-@media only screen and (min-width: 1280px) {
   .pie {
     max-width: 100%;
     background-color: #1C1C1C;
@@ -143,7 +141,7 @@ nav {
     padding: 0.5em;
     border-radius: 0.3em;
     border: none;
-    width: 70%;
+    width: 350px;
   }
 }
 @media only screen and (min-width: 960px) and (max-width: 1279px) {
@@ -161,14 +159,12 @@ nav {
   }
   /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
   footer form input {
-    width: 60%;
+    width: 40%;
     margin-bottom: 10px;
   }
   footer .form button {
     width: 80%;
   }
-}
-@media only screen and (min-width: 960px) and (max-width: 1279px) {
   .pie {
     max-width: 100%;
     background-color: #1C1C1C;
@@ -181,7 +177,7 @@ nav {
     padding: 0.5em;
     border-radius: 0.3em;
     border: none;
-    width: 70%;
+    width: 350px;
   }
 }
 @media only screen and (min-width: 599px) and (max-width: 959px) {
@@ -199,14 +195,12 @@ nav {
   }
   /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
   footer form input {
-    width: 60%;
+    width: 40%;
     margin-bottom: 10px;
   }
   footer .form button {
     width: 80%;
   }
-}
-@media only screen and (min-width: 599px) and (max-width: 959px) {
   .pie {
     max-width: 100%;
     background-color: #1C1C1C;
@@ -219,7 +213,7 @@ nav {
     padding: 0.5em;
     border-radius: 0.3em;
     border: none;
-    width: 70%;
+    width: 350px;
   }
 }
 @media only screen and (max-width: 598px) {
@@ -237,14 +231,12 @@ nav {
   }
   /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
   footer form input {
-    width: 60%;
+    width: 40%;
     margin-bottom: 10px;
   }
   footer .form button {
     width: 80%;
   }
-}
-@media only screen and (max-width: 598px) {
   .pie {
     max-width: 100%;
     background-color: #1C1C1C;
@@ -257,7 +249,40 @@ nav {
     padding: 0.5em;
     border-radius: 0.3em;
     border: none;
-    width: 70%;
+    width: 350px;
+  }
+}
+@media (min-width: 701px) and (max-width: 1280px) {
+  /* 1. Achicamos el espacio entre los botones del menú */
+  footer .navbar-nav {
+    gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+    flex-wrap: wrap; /* Permite que los links bajen si no entran en una línea */
+  }
+  /* 2. Achicamos el tamaño de la letra de los enlaces */
+  footer .nav-link {
+    font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+  }
+  /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
+  footer form input {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+  footer .form button {
+    width: 80%;
+  }
+  .pie {
+    max-width: 100%;
+    background-color: #1C1C1C;
+  }
+  .text-footer {
+    color: #FAFAFA;
+    margin-bottom: 0%;
+  }
+  .formall input {
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: none;
+    width: 100%;
   }
 }
 /* 2. Definimos la fuente base */
@@ -268,7 +293,7 @@ body {
 }
 
 /* 3. Títulos con impacto (Estilo Gaming) */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, figcaption {
   font-weight: 700; /* Negrita fuerte */
   color: #FFFFFF; /* Los títulos sí van en blanco puro para resaltar */
   margin-bottom: 1rem;
@@ -301,7 +326,7 @@ p {
   color: #4CAF50; /* Verde dinero o podrías usar el naranja de la marca */
 }
 
-.btn-social-twitter, btn-social-facebook, .btn-gaming {
+.btn-gaming {
   padding: 10px 20px;
   border-radius: 7px;
   font-weight: bold;
@@ -318,34 +343,6 @@ p {
 }
 .btn-gaming:hover {
   background-color: rgb(10.0816326531, 236.9183673469, 10.0816326531);
-}
-
-btn-social-facebook {
-  background-color: #1877F2;
-  color: #fff;
-}
-btn-social-facebook:hover {
-  background-color: rgb(11.4549180328, 95.1639344262, 203.5450819672);
-}
-
-.btn-social-twitter {
-  background-color: #1DA1F2;
-  color: #fff;
-}
-.btn-social-twitter:hover {
-  background-color: rgb(11.9665271967, 133.4728033473, 208.0334728033);
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #212121;
-  background: #212121;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /*sass | scss */

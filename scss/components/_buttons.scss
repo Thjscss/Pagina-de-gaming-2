@@ -23,22 +23,4 @@
     }
 }
 
-btn-social-facebook {
-    @extend %btn-base;
-    background-color: map-get(v.$social-colors, "facebook");
-    color: #fff;
 
-    &:hover {
-        background-color: darken(map-get(v.$social-colors, "facebook"), 10%);
-    }
-    
-}
-.btn-social-twitter {
-    @extend %btn-base;
-    background-color: map-get(v.$social-colors, "twitter");
-    color: #fff;
-
-    &:hover {
-        background-color: darken(map-get(v.$social-colors, "twitter"), 10%);
-    }
-}

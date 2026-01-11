@@ -19,14 +19,13 @@
 
     /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
     footer form input {
-        width: 60%;
+        width: 40%;
         margin-bottom: 10px;
     }
     footer .form button {
         width: 80%;
     }
-}
-.pie{
+    .pie{
     max-width: 100%;
     background-color: vars.$bg-color-nav;
 }
@@ -38,6 +37,44 @@
     padding: 0.5em;
     border-radius: 0.3em;
     border: none;
-    width: 70%;
+    width: 350px;
+    }
 }
+
 }
+@media (min-width: 701px) and (max-width: 1280px) {
+    /* 1. Achicamos el espacio entre los botones del menú */
+    footer .navbar-nav {
+        gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+        flex-wrap: wrap;      /* Permite que los links bajen si no entran en una línea */
+    }
+
+    /* 2. Achicamos el tamaño de la letra de los enlaces */
+    footer .nav-link {
+        font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+    }
+
+    /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
+    footer form input {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    footer .form button {
+        width: 80%;
+    }
+    .pie{
+    max-width: 100%;
+    background-color: vars.$bg-color-nav;
+}
+.text-footer{
+    color: vars.$text-color;
+    margin-bottom:0% ;
+}
+.formall input{
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: none;
+    width: 100%;
+    }
+}
+
