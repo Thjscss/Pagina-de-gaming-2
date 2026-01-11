@@ -64,8 +64,7 @@ nav{
 }
 
 .navbar-nav{
-  border-color: vars.$primary-accent !important;
-  background-color: vars.$bg-color-nav;
+    border-color: vars.$primary-accent !important;
 }
 .imgbar{
   width: 100%;
@@ -87,7 +86,7 @@ nav{
         }
           &.collapse {
       /* Cuando el menú hamburguesa está cerrado, aplicar fondo secundario */
-background-color: vars.$secondary-bg; // Color cuando está oculto/cerrado (si llegara a verse)
+background-color: vars.$bg-color; // Color cuando está oculto/cerrado (si llegara a verse)
     }
 }
 }

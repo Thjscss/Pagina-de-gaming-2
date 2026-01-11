@@ -3,7 +3,7 @@
 // Placeholder para @extend (Estilo base de botón)
 %btn-base {
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 7px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -16,23 +16,29 @@
 .btn-gaming {
     @extend %btn-base; // Aplica estilos base
     background-color: v.$primary-accent;
-    color: v.$bg-color-nav;
+    color: var(--bg-color-nav);
 
     &:hover {
         background-color: lighten(v.$primary-accent, 10%);
     }
 }
 
-// Bucle para generar clases de redes sociales automáticamente
-// Generará: .btn-social-facebook, .btn-social-twitter, etc.
-@each $network, $color in v.$social-colors {
-    .btn-social-#{$network} {
-        @extend %btn-base;
-        background-color: $color;
-        color: white;
-        
-        &:hover {
-            opacity: 0.8;
-        }
+btn-social-facebook {
+    @extend %btn-base;
+    background-color: map-get(v.$social-colors, "facebook");
+    color: #fff;
+
+    &:hover {
+        background-color: darken(map-get(v.$social-colors, "facebook"), 10%);
+    }
+    
+}
+.btn-social-twitter {
+    @extend %btn-base;
+    background-color: map-get(v.$social-colors, "twitter");
+    color: #fff;
+
+    &:hover {
+        background-color: darken(map-get(v.$social-colors, "twitter"), 10%);
     }
 }

@@ -1,10 +1,9 @@
 @charset "UTF-8";
 /*@Import esta deprecated. El estandar recomendado para usar los @import es @use
 ya que la antigua regla @import ha sido oficialmente marcada como obsoleta (deprecated) y será eliminada en futuras versiones.*/
-/* @use 'navbar'; */
-/* @use 'footer'; */
-/* @use 'typography'; */
-/* @use 'buttons'; */
+/* _typography.scss */
+/* 1. Importamos la fuente (Podes cambiar Montserrat por Poppins si te gusta más) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 header {
   background-color: black;
   padding: 0%;
@@ -18,7 +17,7 @@ header ul li {
 }
 
 nav {
-  background-color: black;
+  background-color: #1C1C1C;
   border-bottom: 2px solid #08BC08;
   height: 6em;
 }
@@ -32,7 +31,7 @@ nav {
   width: 3em;
   height: 3em;
   cursor: pointer;
-  border: 0.2em solid rgb(255, 255, 255);
+  border: 0.2em solid #212121;
   background-color: #08BC08;
   /* Flexbox para centrar las lineas */
   display: flex;
@@ -54,7 +53,7 @@ nav {
 }
 
 .offcanvas {
-  background-color: black;
+  background-color: #1C1C1C;
 }
 
 .nav-link, .offcanvas-title {
@@ -72,7 +71,6 @@ nav {
 
 .navbar-nav {
   border-color: #08BC08 !important;
-  background-color: black;
 }
 
 .imgbar {
@@ -107,11 +105,13 @@ nav {
 }
 .navbar-collapse.show.collapse {
   /* Cuando el menú hamburguesa está cerrado, aplicar fondo secundario */
-  background-color: #2d2d30;
+  background-color: #212121;
 }
 
-/* Media query para pantallas de 700px o menos */
-@media (max-width: 700px) {
+@media only screen and (min-width: 1280px) {
+  /* Media query para pantallas de 700px o menos */
+}
+@media only screen and (min-width: 1280px) and (max-width: 700px) {
   /* 1. Achicamos el espacio entre los botones del menú */
   footer .navbar-nav {
     gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
@@ -130,29 +130,217 @@ nav {
     width: 80%;
   }
 }
-.pie {
-  max-width: 100%;
-  background-color: black;
+@media only screen and (min-width: 1280px) {
+  .pie {
+    max-width: 100%;
+    background-color: #1C1C1C;
+  }
+  .text-footer {
+    color: #FAFAFA;
+    margin-bottom: 0%;
+  }
+  .formall input {
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: none;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+  /* Media query para pantallas de 700px o menos */
+}
+@media only screen and (min-width: 960px) and (max-width: 1279px) and (max-width: 700px) {
+  /* 1. Achicamos el espacio entre los botones del menú */
+  footer .navbar-nav {
+    gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+    flex-wrap: wrap; /* Permite que los links bajen si no entran en una línea */
+  }
+  /* 2. Achicamos el tamaño de la letra de los enlaces */
+  footer .nav-link {
+    font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+  }
+  /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
+  footer form input {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  footer .form button {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+  .pie {
+    max-width: 100%;
+    background-color: #1C1C1C;
+  }
+  .text-footer {
+    color: #FAFAFA;
+    margin-bottom: 0%;
+  }
+  .formall input {
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: none;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 599px) and (max-width: 959px) {
+  /* Media query para pantallas de 700px o menos */
+}
+@media only screen and (min-width: 599px) and (max-width: 959px) and (max-width: 700px) {
+  /* 1. Achicamos el espacio entre los botones del menú */
+  footer .navbar-nav {
+    gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+    flex-wrap: wrap; /* Permite que los links bajen si no entran en una línea */
+  }
+  /* 2. Achicamos el tamaño de la letra de los enlaces */
+  footer .nav-link {
+    font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+  }
+  /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
+  footer form input {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  footer .form button {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 599px) and (max-width: 959px) {
+  .pie {
+    max-width: 100%;
+    background-color: #1C1C1C;
+  }
+  .text-footer {
+    color: #FAFAFA;
+    margin-bottom: 0%;
+  }
+  .formall input {
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: none;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 598px) {
+  /* Media query para pantallas de 700px o menos */
+}
+@media only screen and (max-width: 598px) and (max-width: 700px) {
+  /* 1. Achicamos el espacio entre los botones del menú */
+  footer .navbar-nav {
+    gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+    flex-wrap: wrap; /* Permite que los links bajen si no entran en una línea */
+  }
+  /* 2. Achicamos el tamaño de la letra de los enlaces */
+  footer .nav-link {
+    font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+  }
+  /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
+  footer form input {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  footer .form button {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 598px) {
+  .pie {
+    max-width: 100%;
+    background-color: #1C1C1C;
+  }
+  .text-footer {
+    color: #FAFAFA;
+    margin-bottom: 0%;
+  }
+  .formall input {
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: none;
+    width: 70%;
+  }
+}
+/* 2. Definimos la fuente base */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.6; /* Un poco de aire para que sea fácil de leer */
 }
 
-.text-footer {
-  color: #FAFAFA;
-  margin-bottom: 0%;
+/* 3. Títulos con impacto (Estilo Gaming) */
+h1, h2, h3, h4 {
+  font-weight: 700; /* Negrita fuerte */
+  color: #FFFFFF; /* Los títulos sí van en blanco puro para resaltar */
+  margin-bottom: 1rem;
+  text-transform: uppercase; /* Convertimos a mayúsculas para dar fuerza (tipo "BLACK FRIDAY") */
+  letter-spacing: 1px; /* Separamos un poquito las letras */
 }
 
-.formall input {
-  padding: 0.5em;
-  border-radius: 0.3em;
+h1 {
+  font-size: 2.5rem; /* Título principal grande */
+}
+
+h2 {
+  font-size: 2rem; /* Subtítulos de sección */
+  /* OPCIONAL: Si querés el detalle Naranja/Dorado tipo Maximus en algunos títulos */
+}
+h2.accent {
+  color: #FF8C00;
+}
+
+/* 4. Párrafos */
+p {
+  margin-bottom: 1rem;
+  color: #B0B0B0; /* Un gris un poco más apagado para textos largos, cansa menos */
+}
+
+/* 5. Estilos para los precios (Muy importante en tu tienda) */
+.price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4CAF50; /* Verde dinero o podrías usar el naranja de la marca */
+}
+
+.btn-social-twitter, btn-social-facebook, .btn-gaming {
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
   border: none;
-  width: 70%;
+  cursor: pointer;
 }
 
-/* @use 'reset'; */
+.btn-gaming {
+  background-color: #08BC08;
+  color: var(--bg-color-nav);
+}
+.btn-gaming:hover {
+  background-color: rgb(10.0816326531, 236.9183673469, 10.0816326531);
+}
+
+btn-social-facebook {
+  background-color: #1877F2;
+  color: #fff;
+}
+btn-social-facebook:hover {
+  background-color: rgb(11.4549180328, 95.1639344262, 203.5450819672);
+}
+
+.btn-social-twitter {
+  background-color: #1DA1F2;
+  color: #fff;
+}
+.btn-social-twitter:hover {
+  background-color: rgb(11.9665271967, 133.4728033473, 208.0334728033);
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: rgb(255, 255, 255);
-  background: rgb(255, 255, 255);
+  background-color: #212121;
+  background: #212121;
 }
 
 img {

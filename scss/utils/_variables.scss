@@ -1,14 +1,21 @@
 // Variables globales
-$bg-color: rgb(255, 255, 255); // fondo y bordes
-$bg-color-nav: black; // fondo de la barra de navegación
-$text-color: #FAFAFA; // texto principal
+$bg-color:#212121; // fondo
+$bg-color-nav: #1C1C1C; // fondo de la barra de navegación y footer
+$text-color: #FAFAFA; // texto principal y bordes
 $primary-accent: #08BC08; // botones o títulos importantes
-$secondary-bg: #2d2d30; // fondo secundario
+$button-bg: #FF8C00; // botones y titulos
 
 // NUEVO: Mapa para bucles (@each)
 $social-colors: (
-    "facebook": #3b5998,
-    "twitter": #1da1f2,
-    "instagram": #e1306c,
-    "discord": #7289da
+    /* Azul clásico pero vibrante de Facebook */
+    "facebook":  #1877F2, 
+    
+    /* El celeste característico de Twitter/X */
+    "twitter":   #1DA1F2, 
+    
+    /* El rosa/lila fuerte de Instagram */
+    "instagram": #E1306C, 
+    
+    /* El violeta "Blurple" oficial de Discord */
+    "discord":   #5865F2  
 );

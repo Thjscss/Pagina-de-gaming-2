@@ -1,16 +1,11 @@
 /*@Import esta deprecated. El estandar recomendado para usar los @import es @use
 ya que la antigua regla @import ha sido oficialmente marcada como obsoleta (deprecated) y será eliminada en futuras versiones.*/
 @use './utils/variables' as vars;
-/* @use 'navbar'; */
-/* @use 'footer'; */
-/* @use 'typography'; */
-/* @use 'buttons'; */
 @use './utils/utility' as utility;
 @use './components/navbar';
 @use './components/footer';
 @use '../scss/base/typography';
-/* @use 'reset'; */
-
+@use './components/buttons';
 
 body {
   font-family: Arial, sans-serif;

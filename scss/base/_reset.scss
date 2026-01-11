@@ -1,0 +1,33 @@
+/* _reset.scss */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fundamental: para que el padding no agrande los divs */
+}
+
+/* Reseteo básico para evitar espacios blancos extraños */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Quitamos los puntos de las listas (ideal para tu menú de navegación) */
+ul, ol {
+    list-style: none;
+}
+
+/* Quitamos el subrayado azul feo de los enlaces */
+a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto padre, no se pone azul */
+    transition: all 0.3s ease; /* Suaviza el efecto hover en todos los links */
+}
+
+/* Reseteo de botones para que tomen tus estilos */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
