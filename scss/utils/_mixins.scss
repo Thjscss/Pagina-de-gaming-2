@@ -1,0 +1,52 @@
+@use './utility' as util;
+@use './variables' as vars;
+
+/* Keyframes */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Mixin: gallery-image
+   - $height-desktop: height used on desktop/larger screens
+   - $height-mobile: height used on small screens
+*/
+@mixin gallery-image($height-desktop: 220px, $height-mobile: 160px) {
+  width: 100%;
+  height: $height-desktop;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  @include util.devices(mobile) {
+    height: $height-mobile;
+  }
+}
+
+/* Mixin: fade-in animation */
+@mixin fade-in($duration: .5s) {
+  animation: fade-in $duration ease both;
+}
+
+/* Mixin: button variant
+   - $bg: background color
+   - $color: text color */
+@mixin button-variant($bg, $color: vars.$text-color) {
+  background-color: $bg;
+  color: $color;
+  transition: transform 0.18s ease, filter 0.18s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.95);
+  }
+
+  @include util.devices(mobile) {
+    padding: 8px 14px;
+  }
+}

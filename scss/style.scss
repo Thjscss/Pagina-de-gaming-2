@@ -6,6 +6,7 @@ ya que la antigua regla @import ha sido oficialmente marcada como obsoleta (depr
 @use './components/footer';
 @use '../scss/base/typography';
 @use './components/buttons';
+@use './components/galeria';
 
 body {
   margin: 0px;

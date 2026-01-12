@@ -1,0 +1,17 @@
+@use '../utils/variables' as vars;
+@use '../utils/mixins' as mixins;
+
+.galeriaimg {
+  @include mixins.gallery-image(320px, 160px);
+  @include mixins.fade-in(.5s);
+  
+  /* Agrega esto para evitar la deformación */
+  object-fit: cover;
+  object-position: center; /* Para que se centre la imagen al recortar */
+}
+
+
+.textgalery{
+  color: vars.$text-color;
+  margin: 0%;
+}

@@ -1,4 +1,5 @@
 @use '../utils/variables' as v;
+@use '../utils/mixins' as mixins;
 // Bucle para generar clases de redes sociales
 @each $red, $color in v.$social-colors {
     .nav-link-#{$red} {
@@ -29,8 +30,9 @@
 // Botón estándar
 .btn-gaming {
     @extend %btn-base; // Aplica estilos base
-    background-color: v.$primary-accent;
-    color: var(--bg-color-nav);
+    @include mixins.button-variant(v.$primary-accent, v.$text-color);
 }
 
-
+.borders{
+    border: 2px solid v.$primary-accent;
+}
