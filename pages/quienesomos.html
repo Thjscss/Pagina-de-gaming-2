@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--
+  PreEntrega1 - Miranda
+  Proyecto: Blog de Gaming
+  Archivo: quienesomos.html
+  Descripción: Página secundaria (banner, nav, imagenes y footer).
+  Autor: Thomas Miranda
+-->
+
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pagina web</title>
+    <link rel="icon" href="/img/Logo.jpg" type="Icono">
+    <!--Estilos de la pagina-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-black mt-0">
+            <div class="container-fluid">
+                <button class="navbar-toggler border border-white d-lg-none mt-2" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start text-bg-black" tabindex="-1" id="menuLateral"
+                    aria-labelledby="offcanvasLabel">
+
+                    <div class="offcanvas-header">
+                        <h2 class="offcanvas-title ms-2 mt-3" id="offcanvasLabel">Menú</h2>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 border border-3 rounded-1">
+                            <li class="nav-item"><a class="nav-link ms-2" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link ms-2" href="productos.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link ms-2" href="galeria.html">Galería</a></li>
+                            <li class="nav-item"><a class="nav-link ms-2" href="quienesomos.html">Quiénes
+                                    somos</a></li>
+                            <li class="nav-item"><a class="nav-link ms-2" href="contacto.html">Contacto</a></li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-3 border border-3 rounded-1">
+                            <li class="nav-item"><a class="nav-link ms-2" href="productos.html">Facebook</a></li>
+                            <li class="nav-item"><a class="nav-link ms-2" href="productos.html">Twitter</a></li>
+                            <li class="nav-item"><a class="nav-link ms-2" href="galeria.html">Instagram</a></li>
+                            <li class="btn-social-discord"><a class="nav-link ms-2"
+                                    href="pages/galeria.html">Discord</a></li>
+
+                        </ul>
+                        <div>
+                            <picture class="mt-3 border border-3 rounded-1 navbar-nav ">
+                                <img src="/img/barranav/anunciobarra.jpg" class="imgbar rounded-1" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="navbar-brand mx-auto m-0 d-lg-none">Blog gaming</h1>
+            </div>
+            <div class="container-fluid d-none d-lg-flex">
+                <div>
+                    <h1 class="navbar-brand mx-auto m-0 ">Blog gaming</h1>
+                </div>
+                <div class="d-none d-lg-block border-secondary py-2 mx-auto">
+                    <ul class="navbar-nav d-flex flex-row justify-content-center gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" href="quienesomos.html">Quiénes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-5" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+  <main id="contenido">
+    <!-- Intro breve -->
+    <section aria-labelledby="somos-intro" class="mt-4">
+      <h2>Quiénes somos</h2>
+      <h3 id="somos-intro">Nuestra esencia</h3>
+      <p class="textos">Somos un blog y tienda orientada al gaming en Argentina. Probamos hardware real, compartimos
+        ofertas locales y
+        seleccionamos periféricos que mejoran tu experiencia de juego sin romper el bolsillo.</p>
+    </section>
+    <!-- Misión y visión -->
+    <section aria-labelledby="mision-vision">
+      <h3 id="mision-vision">Misión y visión</h3>
+      <p class="textos"><strong>Misión:</strong> ayudar a gamers a elegir mejor: comparativas claras, guías honestas y
+        precios
+        actualizados.</p>
+      <p class="textos"><strong>Visión:</strong> ser la referencia local en recomendación de hardware accesible y
+        confiable.</p>
+    </section>
+
+    <!-- Valores -->
+    <section aria-labelledby="valores">
+      <h3 id="valores">Nuestros valores</h3>
+      <ul>
+        <li class="textos">Transparencia en reseñas y precios.</li>
+        <li class="textos">Accesibilidad y soporte para principiantes.</li>
+        <li class="textos">Comunidad: escuchamos feedback y mejoramos.</li>
+        <li class="textos">Optimización real: FPS, termales, y calidad/precio.</li>
+      </ul>
+    </section>
+
+    <!-- Historia / línea de tiempo simple -->
+    <section aria-labelledby="historia">
+      <h3 id="historia">Nuestra historia</h3>
+      <ol>
+        <li class="textos">2024 — Nace el blog con reseñas de periféricos.</li>
+        <li class="textos">2025 — Sumamos catálogo propio y guías paso a paso.</li>
+        <li class="textos">2026 — (meta) Comunidad con eventos y torneos locales.</li>
+      </ol>
+    </section>
+
+    <!-- Equipo  -->
+    <section aria-labelledby="equipo">
+      <h3 id="equipo">Equipo</h3>
+      <article>
+        <h4>Thomas Miranda</h4>
+        <figure class="textos">
+          <img src="../img/autor/autor.jpeg" alt="Foto de Thomas Miranda" width="400rem" height="600rem">
+          <figcaption class="mt-5">Fundador, tester y autor de guías.</figcaption>
+        </figure>
+        <p class="textos">Fan de los benchmarks y de exprimir el 1080p Ultra con buen precio/rendimiento. Comparte
+          configuraciones,
+          ofertas y tips de mantenimiento.</p>
+      </article>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section aria-labelledby="por-que">
+      <h3 id="por-que">¿Por qué elegirnos?</h3>
+      <ul>
+        <li class="textos">Recomendaciones con precios locales y cuotas reales.</li>
+        <li class="textos">Probamos en juegos populares (CS2, LoL, V Rising, etc.).</li>
+        <li class="textos">Guías claras: desde BIOS hasta armado básico.</li>
+        <li class="textos">Soporte por correo y respuesta rápida.</li>
+      </ul>
+    </section>
+
+    <!-- Métricas sociales -->
+    <section aria-labelledby="metricas">
+      <h3>Lo que logramos</h3>
+      <ul>
+        <li class="textos">+100 reseñas publicadas.</li>
+        <li class="textos">+5000 lectores únicos mensuales.</li>
+        <li class="textos">Tiempo de respuesta promedio: 24 h.</li>
+      </ul>
+    </section>
+
+    <!-- Testimonios  -->
+    <section aria-labelledby="testimonios">
+      <h3>Testimonios</h3>
+      <P class="textos">
+        “Compré siguiendo su guía y mejoré 35 FPS en 1080p.”
+        <cite>— Lucho, Córdoba</cite>
+      </P>
+    </section>
+
+    <!-- FAQs -->
+    <section aria-labelledby="faqs" class="faqs">
+      <h3>Preguntas frecuentes</h3>
+
+      <details>
+        <summary class="textos">¿Hacen envíos?</summary>
+        <p class="textos">Sí, a todo el país mediante correo y motomensajería en Córdoba.</p>
+      </details>
+
+      <details>
+        <summary class="textos">¿Qué medios de pago aceptan?</summary>
+        <p class="textos">Efectivo, transferencia y tarjetas con cuotas (según banco y promo vigente).</p>
+      </details>
+
+      <details>
+        <summary class="textos">¿Puedo pedir asesoramiento antes de comprar?</summary>
+        <p class="textos">Claro. Escribinos desde la página de <a href="contacto.html">Contacto</a>.</p>
+      </details>
+    </section>
+  </main>
+  <!-- El footer  -->
+    <footer class="pie">
+        <div class="border-secondary py-2 mx-auto">
+            <ul class="navbar-nav d-flex flex-row justify-content-center gap-5">
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="quienesomos.html">Quiénes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bajopie text-center">
+            <form class="formall" action="#" method="post" novalidate>
+                <label for="emailNewsletter" class="text-footer">Suscribite a Blog Gaming para recibir
+                    novedades</label><br>
+                <input id="emailNewsletter" name="email" type="email" autocomplete="email" required
+                    placeholder="tu@email.com">
+                <button type="submit" class="Infut mt-3">Suscribirse</button>
+            </form>
+            <p class="my-2 text-footer">© 2025 Mi Sitio Web</p>
+        </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

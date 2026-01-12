@@ -27,7 +27,7 @@
     }
     .pie{
     max-width: 100%;
-    background-color: vars.$bg-color-nav;
+    border-top: 2px solid vars.$primary-accent;
 }
 .text-footer{
     color: vars.$text-color;
@@ -42,7 +42,7 @@
 }
 
 }
-@media (min-width: 701px) and (max-width: 1280px) {
+@media (min-width: 701px) {
     /* 1. Achicamos el espacio entre los botones del menú */
     footer .navbar-nav {
         gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
@@ -64,7 +64,7 @@
     }
     .pie{
     max-width: 100%;
-    background-color: vars.$bg-color-nav;
+    border-top: 2px solid vars.$primary-accent;
 }
 .text-footer{
     color: vars.$text-color;
@@ -74,7 +74,7 @@
     padding: 0.5em;
     border-radius: 0.3em;
     border: none;
-    width: 100%;
+    width: 30%;
     }
 }
 

@@ -7,7 +7,15 @@ ya que la antigua regla @import ha sido oficialmente marcada como obsoleta (depr
 @use '../scss/base/typography';
 @use './components/buttons';
 
-
-
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: vars.$bg-color;
+  background: vars.$bg-color; 
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*sass | scss */
