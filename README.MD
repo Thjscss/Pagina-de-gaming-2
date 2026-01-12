@@ -24,6 +24,18 @@ Notas:
 
 ---
 
+## Scripts npm añadidos
+- `npm i` — instala dependencias de desarrollo (`sass`, `imagemin-cli`, `imagemin-webp`, `imagemin-mozjpeg`, `imagemin-pngquant`).
+- `npm run build:sass` — compila todos los archivos SASS a `css/style.css`.
+- `npm run watch:sass` — compila en modo watch mientras editas.
+- `npm run optimize:images` — genera versiones WebP optimizadas en `img/wallpapers/webp/`.
+- `npm run build` — ejecuta `build:sass` + `optimize:images`.
+
+> Nota: También añadí un GitHub Action (`.github/workflows/build-optimize.yml`) que ejecuta la compilación y optimización en cada push a `main`. Los archivos WebP resultantes se almacenan en `img/wallpapers/webp/` y se intentará commitearlos en el repo si hay cambios.
+
+
+---
+
 ## Uso de Mixins SASS (rápido)
 - Creé `scss/utils/_mixins.scss` con `@mixin gallery-image()` y `@mixin button-variant()`.
 - Para reutilizar estilos: `@use "../utils/mixins" as mixins;` y luego `@include mixins.gallery-image(220px, 160px);`.
