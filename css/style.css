@@ -15,7 +15,7 @@ header ul {
 
 nav {
   background-color: #1C1C1C;
-  border-bottom: 2px solid #08BC08;
+  border-bottom: 2px solid #0f9d58;
   height: 6em;
 }
 
@@ -29,7 +29,7 @@ nav {
   height: 3em;
   cursor: pointer;
   border: 0.2em solid #212121;
-  background-color: #08BC08;
+  background-color: #0f9d58;
   /* Flexbox para centrar las lineas */
   display: flex;
   flex-direction: column;
@@ -67,7 +67,7 @@ nav {
 }
 
 .navbar-nav {
-  border-color: #08BC08 !important;
+  border-color: #0f9d58 !important;
 }
 
 .imgbar {
@@ -128,7 +128,7 @@ nav {
   }
   .pie {
     max-width: 100%;
-    border-top: 2px solid #08BC08;
+    border-top: 2px solid #0f9d58;
   }
   .text-footer {
     color: #FAFAFA;
@@ -164,7 +164,7 @@ nav {
   }
   .pie {
     max-width: 100%;
-    border-top: 2px solid #08BC08;
+    border-top: 2px solid #0f9d58;
   }
   .text-footer {
     color: #FAFAFA;
@@ -200,7 +200,7 @@ nav {
   }
   .pie {
     max-width: 100%;
-    border-top: 2px solid #08BC08;
+    border-top: 2px solid #0f9d58;
   }
   .text-footer {
     color: #FAFAFA;
@@ -236,7 +236,7 @@ nav {
   }
   .pie {
     max-width: 100%;
-    border-top: 2px solid #08BC08;
+    border-top: 2px solid #0f9d58;
   }
   .text-footer {
     color: #FAFAFA;
@@ -269,7 +269,7 @@ nav {
   }
   .pie {
     max-width: 100%;
-    border-top: 2px solid #08BC08;
+    border-top: 2px solid #0f9d58;
   }
   .text-footer {
     color: #FAFAFA;
@@ -398,7 +398,7 @@ p, li, summary {
 }
 
 .btn-gaming {
-  background-color: #08BC08;
+  background-color: #0f9d58;
   color: #FAFAFA;
   transition: transform 0.18s ease, filter 0.18s ease;
 }
@@ -413,7 +413,7 @@ p, li, summary {
 }
 
 .borders {
-  border: 2px solid #08BC08;
+  border: 2px solid #0f9d58;
 }
 
 .galeriaimg {
