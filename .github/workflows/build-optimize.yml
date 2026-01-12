@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # persist-credentials left as default to allow pushes using GITHUB_TOKEN
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -26,10 +29,18 @@ jobs:
       - name: Optimize images
         run: npm run optimize:images
 
-      - name: Commit optimized images
+      - name: Create or update `optimized-images` branch and push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "action@github.com"
+          # Checkout (or create) the branch from main
+          git fetch origin main
+          git checkout -B optimized-images origin/main
+          # Add optimized images folder (if any)
           git add img/wallpapers/webp || true
           git commit -m "chore: add optimized images" || echo "No optimized images to add"
-          git push || echo "Push failed or no changes"
+          # Push branch to remote (force to update)
+          git push --force --set-upstream origin optimized-images
