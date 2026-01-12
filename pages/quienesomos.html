@@ -9,13 +9,11 @@
 -->
 
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Pagina web</title>
-    <link rel="icon" href="/img/Logo.jpg" type="Icono">
-    <!--Estilos de la pagina-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Quiénes Somos | Blog Gaming</title>
+    <link rel="icon" href="../img/Logo.jpg" type="image/jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -43,12 +41,22 @@
                             <li class="nav-item"><a class="nav-link ms-2" href="contacto.html">Contacto</a></li>
                         </ul>
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-3 border border-3 rounded-1">
-                            <li class="nav-item"><a class="nav-link ms-2" href="productos.html">Facebook</a></li>
-                            <li class="nav-item"><a class="nav-link ms-2" href="productos.html">Twitter</a></li>
-                            <li class="nav-item"><a class="nav-link ms-2" href="galeria.html">Instagram</a></li>
-                            <li class="btn-social-discord"><a class="nav-link ms-2"
-                                    href="pages/galeria.html">Discord</a></li>
-
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-facebook ms-2" href="https://www.facebook.com/"
+                                    target="_blank">Facebook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-twitter ms-2" href="https://x.com/home?lang=es"
+                                    target="_blank">Twitter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-instagram ms-2" href="https://www.instagram.com/"
+                                    target="_blank">Instagram</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-discord ms-2" href="https://discord.com/"
+                                    target="_blank">Discord</a>
+                            </li>
                         </ul>
                         <div>
                             <picture class="mt-3 border border-3 rounded-1 navbar-nav ">
@@ -85,112 +93,122 @@
             </div>
         </nav>
     </header>
-  <main id="contenido">
-    <!-- Intro breve -->
-    <section aria-labelledby="somos-intro" class="mt-4">
-      <h2>Quiénes somos</h2>
-      <h3 id="somos-intro">Nuestra esencia</h3>
-      <p class="textos">Somos un blog y tienda orientada al gaming en Argentina. Probamos hardware real, compartimos
-        ofertas locales y
-        seleccionamos periféricos que mejoran tu experiencia de juego sin romper el bolsillo.</p>
-    </section>
-    <!-- Misión y visión -->
-    <section aria-labelledby="mision-vision">
-      <h3 id="mision-vision">Misión y visión</h3>
-      <p class="textos"><strong>Misión:</strong> ayudar a gamers a elegir mejor: comparativas claras, guías honestas y
-        precios
-        actualizados.</p>
-      <p class="textos"><strong>Visión:</strong> ser la referencia local en recomendación de hardware accesible y
-        confiable.</p>
-    </section>
 
-    <!-- Valores -->
-    <section aria-labelledby="valores">
-      <h3 id="valores">Nuestros valores</h3>
-      <ul>
-        <li class="textos">Transparencia en reseñas y precios.</li>
-        <li class="textos">Accesibilidad y soporte para principiantes.</li>
-        <li class="textos">Comunidad: escuchamos feedback y mejoramos.</li>
-        <li class="textos">Optimización real: FPS, termales, y calidad/precio.</li>
-      </ul>
-    </section>
+    <main id="contenido" class="container my-5">
+        
+        <section class="text-center mb-5 fade-in">
+            <h2 class="display-4 text-uppercase">Nuestra Esencia</h2>
+            <p class="fs-5 col-md-8 mx-auto">
+                Somos un blog y tienda orientada al gaming en Argentina. Probamos hardware real,
+                compartimos ofertas locales y seleccionamos periféricos que mejoran tu experiencia de juego sin romper el bolsillo.
+            </p>
+        </section>
 
-    <!-- Historia / línea de tiempo simple -->
-    <section aria-labelledby="historia">
-      <h3 id="historia">Nuestra historia</h3>
-      <ol>
-        <li class="textos">2024 — Nace el blog con reseñas de periféricos.</li>
-        <li class="textos">2025 — Sumamos catálogo propio y guías paso a paso.</li>
-        <li class="textos">2026 — (meta) Comunidad con eventos y torneos locales.</li>
-      </ol>
-    </section>
+        <hr class="border-secondary mb-5">
 
-    <!-- Equipo  -->
-    <section aria-labelledby="equipo">
-      <h3 id="equipo">Equipo</h3>
-      <article>
-        <h4>Thomas Miranda</h4>
-        <figure class="textos">
-          <img src="../img/autor/autor.jpeg" alt="Foto de Thomas Miranda" width="400rem" height="600rem">
-          <figcaption class="mt-5">Fundador, tester y autor de guías.</figcaption>
-        </figure>
-        <p class="textos">Fan de los benchmarks y de exprimir el 1080p Ultra con buen precio/rendimiento. Comparte
-          configuraciones,
-          ofertas y tips de mantenimiento.</p>
-      </article>
-    </section>
+        <section class="row mb-5 g-4">
+            <div class="col-md-6">
+                <div class="p-4 border border-secondary rounded h-100 bg-dark-subtle">
+                    <h3>Misión</h3>
+                    <p>Ayudar a gamers a elegir mejor: comparativas claras, guías honestas y precios actualizados.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 border border-secondary rounded h-100 bg-dark-subtle">
+                    <h3>Visión</h3>
+                    <p >Ser la referencia local en recomendación de hardware accesible y confiable.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Por qué elegirnos -->
-    <section aria-labelledby="por-que">
-      <h3 id="por-que">¿Por qué elegirnos?</h3>
-      <ul>
-        <li class="textos">Recomendaciones con precios locales y cuotas reales.</li>
-        <li class="textos">Probamos en juegos populares (CS2, LoL, V Rising, etc.).</li>
-        <li class="textos">Guías claras: desde BIOS hasta armado básico.</li>
-        <li class="textos">Soporte por correo y respuesta rápida.</li>
-      </ul>
-    </section>
+        <section class="mb-5">
+            <h3 class="text-center mb-4">Nuestros Valores</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="card h-100 bg-black border-secondary text-white">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Transparencia</h5>
+                            <p class="card-text  small">Reseñas 100% reales y precios claros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-black border-secondary text-white">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Accesibilidad</h5>
+                            <p class="card-text  small">Soporte amigable para principiantes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-black border-secondary text-white">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Comunidad</h5>
+                            <p class="card-text small">Escuchamos feedback y mejoramos juntos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-black border-secondary text-white">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Optimización</h5>
+                            <p class="card-text small">FPS reales y calidad/precio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Métricas sociales -->
-    <section aria-labelledby="metricas">
-      <h3>Lo que logramos</h3>
-      <ul>
-        <li class="textos">+100 reseñas publicadas.</li>
-        <li class="textos">+5000 lectores únicos mensuales.</li>
-        <li class="textos">Tiempo de respuesta promedio: 24 h.</li>
-      </ul>
-    </section>
+        <section class="row align-items-center mb-5 bg-dark p-4 rounded border border-secondary">
+            <div class="col-md-4 text-center">
+                <img src="../img/autor/autor.jpeg" alt="Foto de Thomas Miranda" class="img-fluid rounded-circle border border-3 border-success mb-3" style="max-width: 200px;">
+            </div>
+            <div class="col-md-8">
+                <h3>Thomas Miranda</h3>
+                <h5 class="text-success">Fundador & Tester</h5>
+                <p class=" mt-3">
+                    "Fan de los benchmarks y de exprimir el 1080p Ultra con buen precio/rendimiento. 
+                    Comparto configuraciones, ofertas y tips de mantenimiento."
+                </p>
+            </div>
+        </section>
 
-    <!-- Testimonios  -->
-    <section aria-labelledby="testimonios">
-      <h3>Testimonios</h3>
-      <P class="textos">
-        “Compré siguiendo su guía y mejoré 35 FPS en 1080p.”
-        <cite>— Lucho, Córdoba</cite>
-      </P>
-    </section>
+        <section class="mb-5 col-lg-8 mx-auto">
+            <h3 class="text-center mb-4">Preguntas Frecuentes</h3>
+            <div class="accordion accordion-flush" id="accordionFAQ">
+                
+                <div class="accordion-item bg-black border border-secondary mb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            ¿Hacen envíos?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body ">
+                            <p>Sí, a todo el país mediante correo y motomensajería en Córdoba.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- FAQs -->
-    <section aria-labelledby="faqs" class="faqs">
-      <h3>Preguntas frecuentes</h3>
+                <div class="accordion-item bg-black border border-secondary mb-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            ¿Qué medios de pago aceptan?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body ">
+                            <p>Efectivo, transferencia y tarjetas con cuotas (según banco y promo vigente).</p>
+                        </div>
+                    </div>
+                </div>
 
-      <details>
-        <summary class="textos">¿Hacen envíos?</summary>
-        <p class="textos">Sí, a todo el país mediante correo y motomensajería en Córdoba.</p>
-      </details>
+            </div>
+        </section>
 
-      <details>
-        <summary class="textos">¿Qué medios de pago aceptan?</summary>
-        <p class="textos">Efectivo, transferencia y tarjetas con cuotas (según banco y promo vigente).</p>
-      </details>
+    </main>
 
-      <details>
-        <summary class="textos">¿Puedo pedir asesoramiento antes de comprar?</summary>
-        <p class="textos">Claro. Escribinos desde la página de <a href="contacto.html">Contacto</a>.</p>
-      </details>
-    </section>
-  </main>
-  <!-- El footer  -->
+        <!-- El footer  -->
     <footer class="pie">
         <div class="border-secondary py-2 mx-auto">
             <ul class="navbar-nav d-flex flex-row justify-content-center gap-5">
@@ -217,7 +235,7 @@
                     novedades</label><br>
                 <input id="emailNewsletter" name="email" type="email" autocomplete="email" required
                     placeholder="tu@email.com">
-                <button type="submit" class="Infut mt-3">Suscribirse</button>
+                <button type="submit" class="btn-gaming mt-3">Suscribirse</button>
             </form>
             <p class="my-2 text-footer">© 2025 Mi Sitio Web</p>
         </div>

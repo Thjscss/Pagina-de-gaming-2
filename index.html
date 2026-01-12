@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-black mt-0">
+        <nav class="navbar bg-black mt-0">
             <div class="container-fluid">
                 <button class="navbar-toggler border border-white d-lg-none mt-2" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral">
@@ -36,18 +36,30 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 border border-3 rounded-1">
                             <li class="nav-item"><a class="nav-link ms-2" href="index.html">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link ms-2" href="./pages/productos.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link ms-2" href="./pages/productos.html">Productos</a>
+                            </li>
                             <li class="nav-item"><a class="nav-link ms-2" href="./pages/galeria.html">Galería</a></li>
                             <li class="nav-item"><a class="nav-link ms-2" href="./pages/quienesomos.html">Quiénes
                                     somos</a></li>
                             <li class="nav-item"><a class="nav-link ms-2" href="./pages/contacto.html">Contacto</a></li>
                         </ul>
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-3 border border-3 rounded-1">
-                            <li class="nav-item"><a class="nav-link ms-2" href="pages/productos.html">Facebook</a></li>
-                            <li class="nav-item"><a class="nav-link ms-2" href="pages/productos.html">Twitter</a></li>
-                            <li class="nav-item"><a class="nav-link ms-2" href="pages/galeria.html">Instagram</a></li>
-                            <li class="btn-social-discord"><a class="nav-link ms-2" href="pages/galeria.html">Discord</a></li>
-
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-facebook ms-2" href="https://www.facebook.com/"
+                                    target="_blank">Facebook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-twitter ms-2" href="https://x.com/home?lang=es"
+                                    target="_blank">Twitter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-instagram ms-2" href="https://www.instagram.com/"
+                                    target="_blank">Instagram</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-discord ms-2" href="https://discord.com/"
+                                    target="_blank">Discord</a>
+                            </li>
                         </ul>
                         <div>
                             <picture class="mt-3 border border-3 rounded-1 navbar-nav ">
@@ -92,19 +104,20 @@
                     <a href="https://store.epicgames.com/es-MX/free-games"><img src="./img/imgpaginicio/imgjuegos.jpg"
                             alt="Imagenprincipal" /></a>
                     <figcaption class="mt-3 mb-3">Todas las semanas Epic Games da juegos gratis aprovecha</figcaption>
-                    <a href="https://store.epicgames.com/es-MX/free-games" target="_blank" class="btn-gaming">Saber más</a>
+                    <a href="https://store.epicgames.com/es-MX/free-games" target="_blank" class="btn-gaming">Saber
+                        más</a>
                 </figure>
             </div>
             <div class="text-center mt-5 px-5">
                 <h2>Ofertas accesorios</h2>
-                    <figure class="text-center mt-4">
-                        <a
-                            href="https://www.maximus.com.ar/Productos/Perifericos/maximus.aspx?/CAT=10/SCAT=-1/M=-1/OR=1/PAGE=1/"><img
-                                src="./img/imgpaginicio/imgaccesorios.png" alt="Imagenprincipal" /></a>
-                        <figcaption class="mt-3 mb-3">Con estas ofertas mejoraras tu setup</figcaption>
-                        <a href="https://store.epicgames.com/es-MX/free-games" target="_blank" class="btn-gaming"
-                        >Saber más</a>
-                    </figure>
+                <figure class="text-center mt-4">
+                    <a
+                        href="https://www.maximus.com.ar/Productos/Perifericos/maximus.aspx?/CAT=10/SCAT=-1/M=-1/OR=1/PAGE=1/"><img
+                            src="./img/imgpaginicio/imgaccesorios.png" alt="Imagenprincipal" /></a>
+                    <figcaption class="mt-3 mb-3">Con estas ofertas mejoraras tu setup</figcaption>
+                    <a href="https://store.epicgames.com/es-MX/free-games" target="_blank" class="btn-gaming">Saber
+                        más</a>
+                </figure>
             </div>
             <div class="text-center mt-5 px-5">
                 <h2>Componentes con descuentos</h3>
@@ -116,16 +129,6 @@
                             más</a>
             </div>
         </section>
-        <section class="video-container">
-    <video 
-        src="ruta/a/tu-video.mp4" 
-        class="video-responsive" 
-        autoplay 
-        muted 
-        loop 
-        playsinline>
-    </video>
-</section>
     </main>
     <footer class="pie">
         <div class="border-secondary py-2 mx-auto">
@@ -153,7 +156,7 @@
                     novedades</label><br>
                 <input id="emailNewsletter" name="email" type="email" autocomplete="email" required
                     placeholder="tu@email.com">
-                <button type="submit" class="Infut mt-3">Suscribirse</button>
+                <button type="submit" class="btn-gaming mt-3">Suscribirse</button>
             </form>
             <p class="my-2 text-footer">© 2025 Mi Sitio Web</p>
         </div>
@@ -162,7 +165,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-      
+
 </body>
 
 </html>

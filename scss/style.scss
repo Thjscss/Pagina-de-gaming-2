@@ -8,9 +8,7 @@ ya que la antigua regla @import ha sido oficialmente marcada como obsoleta (depr
 @use './components/buttons';
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: vars.$bg-color;
+  margin: 0px;
   background: vars.$bg-color; 
 }
 img {

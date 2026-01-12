@@ -9,7 +9,7 @@
 -->
 
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pagina web</title>
     <link rel="icon" href="/img/Logo.jpg" type="Icono">
@@ -43,12 +43,22 @@
                             <li class="nav-item"><a class="nav-link ms-2" href="contacto.html">Contacto</a></li>
                         </ul>
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-3 border border-3 rounded-1">
-                            <li class="nav-item"><a class="nav-link ms-2" href="productos.html">Facebook</a></li>
-                            <li class="nav-item"><a class="nav-link ms-2" href="productos.html">Twitter</a></li>
-                            <li class="nav-item"><a class="nav-link ms-2" href="galeria.html">Instagram</a></li>
-                            <li class="btn-social-discord"><a class="nav-link ms-2"
-                                    href="pages/galeria.html">Discord</a></li>
-
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-facebook ms-2" href="https://www.facebook.com/"
+                                    target="_blank">Facebook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-twitter ms-2" href="https://x.com/"
+                                    target="_blank">Twitter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-instagram ms-2" href="https://www.instagram.com/"
+                                    target="_blank">Instagram</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-discord ms-2" href="https://discord.com/"
+                                    target="_blank">Discord</a>
+                            </li>
                         </ul>
                         <div>
                             <picture class="mt-3 border border-3 rounded-1 navbar-nav ">
@@ -85,80 +95,88 @@
             </div>
         </nav>
     </header>
-  <main id="contenido">
-    <!-- Introducción -->
-    <section class="mt-4">
-      <h2>Contacto</h2>
-      <p class="textos">¿Tenés dudas, querés hacer una consulta sobre productos o colaborar con el Blog?
-        Completá el siguiente formulario o escribinos por nuestras redes sociales.</p>
-    </section>
+    <main id="contenido" class="container my-5">
+        
+        <section class="text-center mb-5">
+            <h2>Contacto</h2>
+            <p class="textos fs-5 col-lg-8 mx-auto">
+                ¿Tenés dudas, querés hacer una consulta sobre productos o colaborar con el Blog?
+                Completá el formulario o escribinos por nuestras redes.
+            </p>
+        </section>
 
-    <!-- Formulario principal -->
-    <section aria-labelledby="form-contacto" class="mb-4">
-      <h3 id="form-contacto">Formulario de contacto</h3>
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <section aria-labelledby="form-contacto">
+                    <h3 id="form-contacto" class="mb-4">Formulario de contacto</h3>
 
-      <form action="#" method="post" novalidate class="textos">
-        <label for="nombre">Nombre completo</label><br>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+                    <form action="#" method="post" novalidate>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label textos">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
 
-        <label for="email">Correo electrónico</label><br>
-        <input type="email" id="email" name="email" placeholder="tu@email.com" required><br><br>
+                        <div class="mb-3">
+                            <label for="email" class="form-label textos">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
 
-        <label for="motivo">Motivo de contacto</label><br>
-        <select id="motivo" name="motivo" required>
-          <option value="">Seleccioná una opción</option>
-          <option value="consulta">Consulta general</option>
-          <option value="soporte">Soporte técnico</option>
-          <option value="colaboracion">Colaboración o publicidad</option>
-        </select><br><br>
+                        <div class="mb-3">
+                            <label for="motivo" class="form-label textos">Motivo de contacto</label>
+                            <select id="motivo" name="motivo" class="form-select" required>
+                                <option value="" selected>Seleccioná una opción</option>
+                                <option value="consulta">Consulta general</option>
+                                <option value="soporte">Soporte técnico</option>
+                                <option value="colaboracion">Colaboración o publicidad</option>
+                            </select>
+                        </div>
 
-        <label for="mensaje">Mensaje</label><br>
-        <textarea id="mensaje" name="mensaje" rows="5" cols="30" placeholder="Escribí tu mensaje..."
-          required></textarea><br><br>
+                        <div class="mb-4">
+                            <label for="mensaje" class="form-label textos">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+                        </div>
 
-        <button type="submit">Enviar mensaje</button>
-      </form>
-    </section>
+                        <button type="submit" class="btn-gaming w-100">Enviar mensaje</button>
+                    </form>
+                </section>
+            </div>
 
-    <!-- Otros medios de contacto -->
-    <section aria-labelledby="otros-medios" class="textos">
-      <h3 id="otros-medios">Otras formas de contacto</h3>
-      <p><strong>Email: contacto@blogdegaming.com</p>
-      <p><strong>Teléfono:</strong> +54 351 123-4567</p>
-      <p><strong>Ubicación:</strong> Córdoba Capital, Argentina</p>
-    </section>
-    <!-- Ubicación y horarios -->
-    <section aria-labelledby="ubicacion" class="textos">
-      <h3 id="ubicacion">Ubicación y horarios</h3>
-      <address>
-        Córdoba Capital, Argentina<br>
-        Lunes a Viernes: 10:00 - 18:00
-      </address>
+            <div class="col-lg-6">
+                
+                <section aria-labelledby="otros-medios" class="mb-5 p-4 border border-secondary rounded">
+                    <h3 id="otros-medios">Información</h3>
+                    <ul class="list-unstyled mt-3">
+                        <li class="textos mb-2"><strong>Email:</strong> contacto@blogdegaming.com</li>
+                        <li class="textos mb-2"><strong>Teléfono:</strong> +54 351 123-4567</li>
+                        <li class="textos mb-2"><strong>Ubicación:</strong> Córdoba Capital, Argentina</li>
+                        <li class="textos"><strong>Horarios:</strong> Lunes a Viernes: 10:00 - 18:00</li>
+                    </ul>
+                </section>
 
-      <!-- Mapa -->
-      <section aria-labelledby="mapa" class="textos">
-        <h3 id="mapa">Ubicación</h3>
-        <p>Nos encontramos en el centro de Córdoba. Podés visitarnos con cita previa.</p>
+                <section aria-labelledby="mapa" class="mb-4">
+                    <h3 id="mapa">Ubicación</h3>
+                    <p class="textos mb-3">Nos encontramos en el centro de Córdoba. Podés visitarnos con cita previa.</p>
+                    
+                    <div class="ratio ratio-16x9 border border-secondary rounded">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.656502213898!2d-64.1887!3d-31.4201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329883be769735%3A0x62a5f8f8f0753066!2sC%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2sar!4v1234567890" 
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
 
-        <iframe
-          src="https://www.google.com/maps/place/Patio+Olmos+Shopping/@-31.419547,-64.1888482,19z/data=!4m10!1m2!2m1!1spatio+olmos!3m6!1s0x9432a32dcf5d747f:0x40373220b29140ac!8m2!3d-31.4198818!4d-64.1882711!15sCgtwYXRpbyBvbG1vc1oNIgtwYXRpbyBvbG1vc5IBD3Nob3BwaW5nX2NlbnRlcuABAA!16s%2Fm%2F07k86k5?entry=ttu&g_ep=EgoyMDI1MTAyNi4wIKXMDSoASAFQAw%3D%3D"
-          width="400" height="300" loading="lazy"></iframe>
+                <section aria-labelledby="redes">
+                    <h3>Redes sociales</h3>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://www.instagram.com/" class="btn btn-outline-light btn-sm" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/" class="btn btn-outline-light btn-sm" target="_blank">Facebook</a>
+                        <a href="https://x.com/" class="btn btn-outline-light btn-sm" target="_blank">Twitter / X</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
 
-      </section>
-
-      <!-- Redes sociales -->
-      <section aria-labelledby="redes">
-        <h3 id="redes">Redes sociales</h3>
-        <ul>
-          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li><br>
-          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li><br>
-          <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter / X</a></li><br><br>
-        </ul>
-      </section>
-
-  </main>
-
-  <!-- El footer  -->
+    <!-- El footer  -->
     <footer class="pie">
         <div class="border-secondary py-2 mx-auto">
             <ul class="navbar-nav d-flex flex-row justify-content-center gap-5">
@@ -185,7 +203,7 @@
                     novedades</label><br>
                 <input id="emailNewsletter" name="email" type="email" autocomplete="email" required
                     placeholder="tu@email.com">
-                <button type="submit" class="Infut mt-3">Suscribirse</button>
+                <button type="submit" class="btn-gaming mt-3">Suscribirse</button>
             </form>
             <p class="my-2 text-footer">© 2025 Mi Sitio Web</p>
         </div>

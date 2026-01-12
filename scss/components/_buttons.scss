@@ -1,5 +1,19 @@
 @use '../utils/variables' as v;
+// Bucle para generar clases de redes sociales
+@each $red, $color in v.$social-colors {
+    .nav-link-#{$red} {
+        color: v.$text-color;
+        border-left: 3px solid transparent;
+        transition: all 0.3s ease;
 
+        &:hover {
+            color: $color; // Usa el color específico de la red (azul, celeste, rosa, etc.)
+            border-left: 3px solid $color;
+            background-color: rgba($color, 0.1);
+            padding-left: 10px; // Efecto de desplazamiento
+        }
+    }
+}
 // Placeholder para @extend (Estilo base de botón)
 %btn-base {
     padding: 10px 20px;
@@ -17,10 +31,6 @@
     @extend %btn-base; // Aplica estilos base
     background-color: v.$primary-accent;
     color: var(--bg-color-nav);
-
-    &:hover {
-        background-color: lighten(v.$primary-accent, 10%);
-    }
 }
 
 

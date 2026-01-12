@@ -25,22 +25,16 @@ h1 {
 
 h2 {
     font-size: 2rem; /* Subtítulos de sección */
-    
-    /* OPCIONAL: Si querés el detalle Naranja/Dorado tipo Maximus en algunos títulos */
-    &.accent {
-        color: #FF8C00; 
-    }
 }
 
-/* 4. Párrafos */
-p {
-    margin-bottom: 1rem;
-    color: #B0B0B0; /* Un gris un poco más apagado para textos largos, cansa menos */
+/* 4. Párrafos y forms*/
+p, li, summary {
+    color: #B0B0B0;
+    font-family: 'Montserrat', sans-serif;
 }
-
 /* 5. Estilos para los precios (Muy importante en tu tienda) */
 .price {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #4CAF50; /* Verde dinero o podrías usar el naranja de la marca */
+    color: #4CAF50;
 }
