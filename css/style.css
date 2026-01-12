@@ -67,7 +67,7 @@ nav {
 }
 
 .navbar-nav {
-  border-color: #0f9d58 !important;
+  border-color: #0f9d58;
 }
 
 .imgbar {
@@ -111,12 +111,12 @@ nav {
 @media only screen and (min-width: 1280px) and (max-width: 700px) {
   /* 1. Achicamos el espacio entre los botones del menú */
   footer .navbar-nav {
-    gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+    gap: 1rem; /* Cambiamos el gap-5 por algo más pequeño */
     flex-wrap: wrap; /* Permite que los links bajen si no entran en una línea */
   }
   /* 2. Achicamos el tamaño de la letra de los enlaces */
   footer .nav-link {
-    font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+    font-size: 1rem; /* Sobrescribe el fs-5 de Bootstrap */
   }
   /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
   footer form input {
@@ -147,12 +147,12 @@ nav {
 @media only screen and (min-width: 960px) and (max-width: 1279px) and (max-width: 700px) {
   /* 1. Achicamos el espacio entre los botones del menú */
   footer .navbar-nav {
-    gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+    gap: 1rem; /* Cambiamos el gap-5 por algo más pequeño */
     flex-wrap: wrap; /* Permite que los links bajen si no entran en una línea */
   }
   /* 2. Achicamos el tamaño de la letra de los enlaces */
   footer .nav-link {
-    font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+    font-size: 1rem; /* Sobrescribe el fs-5 de Bootstrap */
   }
   /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
   footer form input {
@@ -183,12 +183,12 @@ nav {
 @media only screen and (min-width: 599px) and (max-width: 959px) and (max-width: 700px) {
   /* 1. Achicamos el espacio entre los botones del menú */
   footer .navbar-nav {
-    gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+    gap: 1rem; /* Cambiamos el gap-5 por algo más pequeño */
     flex-wrap: wrap; /* Permite que los links bajen si no entran en una línea */
   }
   /* 2. Achicamos el tamaño de la letra de los enlaces */
   footer .nav-link {
-    font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+    font-size: 1rem; /* Sobrescribe el fs-5 de Bootstrap */
   }
   /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
   footer form input {
@@ -219,12 +219,12 @@ nav {
 @media only screen and (max-width: 598px) and (max-width: 700px) {
   /* 1. Achicamos el espacio entre los botones del menú */
   footer .navbar-nav {
-    gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+    gap: 1rem; /* Cambiamos el gap-5 por algo más pequeño */
     flex-wrap: wrap; /* Permite que los links bajen si no entran en una línea */
   }
   /* 2. Achicamos el tamaño de la letra de los enlaces */
   footer .nav-link {
-    font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+    font-size: 1rem; /* Sobrescribe el fs-5 de Bootstrap */
   }
   /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
   footer form input {
@@ -252,12 +252,12 @@ nav {
 @media (min-width: 701px) {
   /* 1. Achicamos el espacio entre los botones del menú */
   footer .navbar-nav {
-    gap: 1rem !important; /* Cambiamos el gap-5 por algo más pequeño */
+    gap: 1rem; /* Cambiamos el gap-5 por algo más pequeño */
     flex-wrap: wrap; /* Permite que los links bajen si no entran en una línea */
   }
   /* 2. Achicamos el tamaño de la letra de los enlaces */
   footer .nav-link {
-    font-size: 1rem !important; /* Sobrescribe el fs-5 de Bootstrap */
+    font-size: 1rem; /* Sobrescribe el fs-5 de Bootstrap */
   }
   /* 3. Ajustamos el formulario de suscripción para que no ocupe tanto espacio */
   footer form input {
